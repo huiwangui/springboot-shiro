@@ -31,4 +31,6 @@ thymeleaf和shiro标签整合使用
 Quartz: 任务调度：实现某些功能定时执行
 
 
-Quartz相关视频地址：https://www.bilibili.com/video/av55637917?p=1 
+Quartz相关视频地址：https://www.bilibili.com/video/av55637917?p=1
+springboot整合shiro、mybatis视频地址： 
+https://www.bilibili.com/video/av33332282/?spm_id_from=333.788.videocard.6
