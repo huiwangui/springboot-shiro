@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试thymeleaf的使用</title>
+</head>
+<body>
+   <h3 th:text="${name}"></h3>
+
+   <!-- 任何的请求都要经过controller来完成跳转 -->
+   <!--
+            认证需求：访问以下二个页面需要登录后才可以访问
+            授权需求：访问用户添加页面需要对应的权限才可以访问
+            thymeleaf和shiro标签整合需求：不同用户同一个页面显示的内容不一样
+   -->
+   <div shiro:hasPermission="user:add">
+   进入用户添加功能：<a href="add">用户添加</a> <br>
+   </div>
+   <div shiro:hasPermission="user:update">
+   进入用户修改功能：<a href="update">用户修改</a>
+   </div>
+   <a href="toLogin">登录</a>
+</body>
+</html>
